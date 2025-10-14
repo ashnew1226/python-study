@@ -623,6 +623,15 @@ import re
 # txt = "this is train"
 # x = re.sub("\s","9",txt,2) #can control the count of replacement (observ at location of '2')
 # print(x)
-txt = "The rain in Spain"
-x = re.search(r"\bS\w+", txt)
-print(x.span())
+# txt = "The rain in Spain"
+# x = re.search(r"\bS\w+", txt)
+# print(x.span())
+
+# Python try except
+# try : try blocl let you test a block of code for errors
+# except : the except block let you handle the error
+# else : block let you execute the code when there is no error
+# finally : the finally block lets you execute code, regardless of the result of the try-except block
+# exceptions  :  exception ca be handled by the try block
+# x = None
+# print(type(x))
