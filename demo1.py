@@ -413,8 +413,216 @@
 # for i in myiter:
 #     print(i)
 
+# Polymorphism it refers to method/functions/operators with the same name that that can be executed on many objects and classes.
+# Function Polymorphism
+# a = "hello"
+# len(a) 
 
+# class polymorphism
+# is often used in class methods where we can have multiple classes with same method name
+# class Car:
+#     def __init__(self,brand,model):
+#         self.brand = brand
+#         self.model = model
+#     def move(self):
+#         print("Drive")
 
+# class Boat:
+#     def __init__(self,brand,model):
+#         self.brand = brand
+#         self.model = model
+#     def move(self):
+#         print("Sail")
 
+# class Plane:
+#     def __init__(self,brand,model):
+#         self.brand = brand
+#         self.model = model
+#     def move(self):
+#         print("Fly")
+    
+# car1 = Car("Ford", "Mustang")
+# boat1 = Boat("Ibiza", "Touring 20")
+# plane1 = Plane("Boeing", "747")
 
+# for i in (car1,boat1,plane1):
+#     i.move()
 
+# Inheritance using polymorphism
+
+# class Vehicle:
+#     def __init__(self,brand,model):
+#         self.brand = brand
+#         self.model = model
+#     def move(self):
+#         print("move")
+
+# class Car(Vehicle):
+#     pass
+
+# class Boat(Vehicle):
+#     def move(self):
+#         print("Sail")
+
+# class Plane(Vehicle):
+#     def move(self):
+#         print("fly")
+
+# c1 = Car("Ford","Mastang")
+# b1 = Boat("Ibiza", "Touring 20")
+# p1 = Plane("Boeing", "747")
+
+# for x in(c1,b1,p1):
+#     print(f"brand - {x.brand}")
+#     print(f"model - {x.model}")
+#     x.move()
+# Module in python : by using the import statement we can use functions,all type of variables like array,dictionary,objects
+# mymodule is the another which is stored at same location
+# import mymodule
+
+# a = mymodule.person1["name"]
+# print(a)
+# Rename a module :->
+# import mymodule as mx
+
+# a = mx.person1["age"]
+# print(a)
+# import platform 
+
+# a = dir(platform)    # dir() can used on any modules
+# print(a)
+# from mymodule import person1 # when use from then dont need to call like 'mymodule.person1["name"]'
+# print(person1["name"])
+# Date time
+# import datetime
+
+# a = datetime.datetime.now()
+
+# print(a.strftime("%a"))
+# print(a.strftime("%A"))
+# print(a.strftime("%w"))
+# print(a.strftime("%d"))
+# print(a.strftime("%b"))
+# print(a.strftime("%B"))
+# print(a.strftime("%m"))
+# print(a.strftime("%y"))
+# print(a.strftime("%Y"))
+# print(a.strftime("%H"))
+# print(a.strftime("%I"))
+# print(a.strftime("%p"))
+# print(a.strftime("%M"))
+# print(a.strftime("%S"))
+# print(a.strftime("%f"))
+# print(a.strftime("%z"))
+
+# a = datetime.datetime(2025,10,15) # year,month,day
+
+# Python math
+# a = min(3,5,1)
+# b = max(54,21,80)
+# print(a)
+# print(b)
+# a = abs(-7.05)   # abs function returns the absolute (positive) value of a specific number
+# print(a)
+
+# a = pow(4,3)
+# print(a)
+# import math 
+# a = math.sqrt(64)
+# print(a)
+# print(math.ceil(1.6))
+# print(math.floor(1.6))
+
+# print(math.pi) # 3.141592653589793
+
+# JSON in Python
+# import json
+# a = '{"name":"ashish","age":"19","designation":"developer"}'
+# print(type(a))
+# b = json.loads(a) # to convert string to json
+# print(b)
+# print(type(b))
+
+# a = {"name":"ashish","age":"19","designation":"developer"}
+# print(type(a))
+# b = json.dumps(a) # to convert json to string 
+# print(b)
+# print(type(b))
+
+# a = 40
+# print(json.dumps(None))
+
+# import json
+# x = {
+#   "name": "John",
+#   "age": 30,
+#   "married": True,
+#   "divorced": False,
+#   "children": ("Ann","Billy"),
+#   "pets": None,
+#   "cars": [
+#     {"model": "BMW 230", "mpg": 27.5},
+#     {"model": "Ford Edge", "mpg": 24.1}
+#   ]
+# }
+# a = json.dumps(x, indent=4, separators=(". ", " = "))
+# # print(type(a))
+# # print(a)
+# asrot = json.dumps(x, indent=4, sort_keys=True)
+# print(asrot)
+
+# Regex Module
+
+import re
+
+# txt = "search the train"
+# x = re.search("^search.*train$",txt)
+# print(x)
+
+# functions in re module
+# findall() # Returns a list containing all matches
+# seach() # Returns a match object if there is match anywhere in string 
+# split() # Returns a list where the string has been split at each match
+#sub() Replaces one ar many matches with a string
+
+# txt = "search the train"
+# a = re.findall("[a-z]",txt)
+# print(type(a))
+# print(a)
+
+# a = "that is 20 Theeethat rupees Thisth"
+# b = re.findall("^that",a)
+# b = re.findall("th.{3}i",a)
+# b = re.findall(r"\bth",a)  # /b beginning or at the end of word
+# b = re.findall(r"\Bth",a)  # /B where the specified character is present or not
+# b = re.findall(r"\d",a)  # /d search and check if there is any digit 
+# b = re.findall(r"\D",a)  # /d search and check if there is not a single digit 
+# b = re.findall(r"\s",a)  # /d check if there is a white space character 
+# b = re.findall(r"\S",a)  # /d check if there is not a white space character 
+# b = re.findall(r"\w",a)  # /w Returns a match where the string contains any word characters 
+# b = re.findall(r"\W",a)  # /W Returns a match where the string DOES NOT contain any word characters	 
+# print(b)
+
+# txt = "The rain in Spain"
+# a = re.findall("ai",txt)
+# print(a)  #if no matches found using 'findall' the empty [] returned
+# x = re.search("ash", txt)
+# print(x)   #if no matches found using 'search' the None returned
+
+#  split() Returns a ist where the string has been split at each match
+# txt = "The rain in Spain"
+# a = re.split("\s",txt)
+# print(a)
+
+# sub() :- function replaces the matches with teh text of your choice
+
+# txt = "this is train"
+# x = re.sub("\s","9",txt)
+# print(x)
+
+# txt = "this is train"
+# x = re.sub("\s","9",txt,2) #can control the count of replacement (observ at location of '2')
+# print(x)
+txt = "The rain in Spain"
+x = re.search(r"\bS\w+", txt)
+print(x.span())
