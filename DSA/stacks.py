@@ -8,11 +8,24 @@
 # 4) isEmpty : Checks if the stack is empty
 # 5) size : Finds the number of elements in the stack
 # stacks can be implemented using arrays or linked lists
-stack = []
-stack.append('A')
-stack.append('B')
-stack.append('C')
-print(f"stack : {stack}")
 
-topElement = stack[-1]
-print(f"peek :")
+# stack = []
+# stack.append('A')
+# stack.append('B')
+# stack.append('C')
+# print(f"stack : {stack}")
+
+# topElement = stack[-1]
+# print(f"peek : {topElement}")
+
+# poppedElement = stack.pop()
+# print(f"pop : {poppedElement}")
+# print(f"stack after pop : {stack}")
+
+# isEmpty = not bool(stack)
+# print(f"isEmpty is : {isEmpty}")
+
+# print(f"size : {len(stack)}")
+
+# stacks are memory efficient they do not hold the next elements address like linked list do
+# easier to implement and understand
