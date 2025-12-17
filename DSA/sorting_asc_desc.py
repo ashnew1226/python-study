@@ -29,9 +29,9 @@
 
 
 # finding lowest element in array
-# a = [6,4,8,3,9,2]
-# low = a[0]
-# for i in a:
-#     if i < low:
-#         low = i
-# print(low)
+a = [6,4,8,3,9,2]
+low = a[0]
+for i in a:
+    if i < low:
+        low = i
+print(low)
