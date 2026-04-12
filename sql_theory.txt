@@ -1,0 +1,23 @@
+DDL :           | Data Defination Language
+    CREATE 
+    DROP
+    ALTER
+    TRUNCATE
+DML :           | Date manipulation Language
+    INSERT
+    UPDATE
+    DELETE
+TCL :           | Transaction Control Language
+    COMMIT
+    SAVEPOINT
+    ROLLBACK
+DQL :           | Data Query Language
+    SELECT
+DCL :           | Data Control Language(mainly used to control rights,permission of database)
+    GRANT
+    REVOKE
+
+Joins :- join clause is used to combine rows from two or more tables, based on a related column between them.
+SELECT * from t1 LEFT JION (t2,t3,t4)
+                    on (t2.a = t1.a AND t3.b = t1.b, t4.c = t1.c)
+                    

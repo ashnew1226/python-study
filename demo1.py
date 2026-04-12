@@ -635,3 +635,12 @@ import re
 # exceptions  :  exception ca be handled by the try block
 # x = None
 # print(type(x))
+
+class Demo:
+    def demomethod(a,b):
+        c = a + b
+        print("addition ",c)
+obj = Demo
+obj.demomethod(10,20)
+obj.demomethod(30,20)
+obj.demomethod(40,20)
