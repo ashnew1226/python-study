@@ -143,13 +143,40 @@
 
 #max odd binary from given binary
 
-def max_odd_binary(s):
-    ones = ''
-    zeros = ''
-    for n in s:
-        if n == '1':
-            ones += '1'
-        elif n == '0':
-            zeros += '0'
-    print(ones[:-1] + zeros + '1')
-max_odd_binary("01010110")
+# def max_odd_binary(s):
+#     ones = ''
+#     zeros = ''
+#     for n in s:
+#         if n == '1':
+#             ones += '1'
+#         elif n == '0':
+#             zeros += '0'
+#     print(ones[:-1] + zeros + '1')
+# max_odd_binary("01010110")
+# def is_prime(n):
+#     if n <= 1:
+#         return False
+#     for i in range(2,int(n**0.5)+1):
+#         if n % i == 0:
+#             print(f"i = {i}")
+#             return False
+#     return True
+
+# print(is_prime(18))
+# def closest_primary(num):
+#     d = 1
+#     while True:
+#         lower = num - d 
+#         upper = num + d
+#         lower_prime = is_prime(lower) if lower > 1 else False
+#         upper_prime = is_prime(upper)
+#         if lower_prime and upper_prime:
+#             print(lower,upper)    
+#             return
+#         if lower_prime:
+#             print(lower)
+#             return
+#         if upper_prime:
+#             print(upper)
+#         d+=1
+# closest_primary(30)
