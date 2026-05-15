@@ -3,7 +3,6 @@ class Node:
         self.data = data
         self.next = None
 
-
 def reverse(head):
     prev = None
     curr = head

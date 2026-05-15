@@ -180,3 +180,31 @@
 #             print(upper)
 #         d+=1
 # closest_primary(30)
+
+
+# Counting frequency of array elements
+
+# def count_freq(arr):
+#     freq = {}
+#     for i in arr:
+#         freq[i] = freq.get(i,0)+1
+#     print(freq)
+# arr = ["ashish","ash","ram","ashish"]
+# count_freq(arr)
+
+
+# Heighest occuring element in array
+def hei_ocr(arr):
+    freq = {}
+    for i in arr:
+        freq[i] = freq.get(i,0)+1
+    max_count = 0
+    max_ele = None
+    for key,value in freq.items():
+        if value > max_count:
+            max_count = value
+            max_ele = key
+    print(f"max element is : {max_ele}")
+    print(f"max element count is : {max_count}")
+arr = ["ashish","ash","ram","ashish"]
+hei_ocr(arr)
