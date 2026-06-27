@@ -194,17 +194,168 @@
 
 
 # Heighest occuring element in array
-def hei_ocr(arr):
-    freq = {}
-    for i in arr:
-        freq[i] = freq.get(i,0)+1
-    max_count = 0
-    max_ele = None
-    for key,value in freq.items():
-        if value > max_count:
-            max_count = value
-            max_ele = key
-    print(f"max element is : {max_ele}")
-    print(f"max element count is : {max_count}")
-arr = ["ashish","ash","ram","ashish"]
-hei_ocr(arr)
+# def hei_ocr(arr):
+#     freq = {}
+#     for i in arr:
+#         freq[i] = freq.get(i,0)+1
+#     max_count = 0
+#     max_ele = None
+#     for key,value in freq.items():
+#         if value > max_count:
+#             max_count = value
+#             max_ele = key
+#     print(f"max element is : {max_ele}")
+#     print(f"max element count is : {max_count}")
+# arr = ["ashish","ash","ram","ashish"]
+# hei_ocr(arr)
+
+
+
+# Leap year practice
+# def is_leap(year):
+#     return (year % 4 == 0) and (year % 100 != 0 or year % 400 == 0)
+# print(is_leap(2004))
+
+
+# closest prime number
+# def is_prime(num):
+#     for i in range(2,int(num ** 0.5)+1):
+#         if num % i == 0:
+#             return False
+#     return True
+#     return flag
+# def closest_prime(num):
+#     d = 1
+#     while True:
+#         lower = num - d
+#         upper = num + d
+#         lower_prime = is_prime(lower) if num > 1 else False
+#         upper_prime = is_prime(upper)
+#         if lower_prime and upper_prime:
+#             print(f"closest prime are : {lower}, {upper}")
+#             return
+#         elif lower_prime:
+#             print(f" closest prime is : {lower}")
+#             return
+#         elif upper_prime:
+#             print(f" closest prime is : {upper}")
+#             return
+#         d += 1
+# closest_prime(30)
+
+# def non_rep_char(words):
+#     freq = {}
+#     for char in words:
+#         freq[char] = freq.get(char,0)+1
+#     for char in words:    
+#         if freq[char] == 1:
+#             print(f"non repeating char is : {char}")
+#             return
+# non_rep_char("amazom")
+
+# Sum of digits
+
+# def sum_digits(num):
+#     total = 0
+#     while num > 0:
+#         digits = num % 10
+#         total += digits
+#         num = num // 10
+#     print(f"sum of digits : {total}")
+# sum_digits(123)
+
+
+# second largest number in array
+# def sec_lrg_num(arr):
+#     first = float("-inf")
+#     second = float("-inf")
+#     for num in arr:
+#         if num > first:
+#             second = first
+#             first = num
+#         elif num > second and num != first:
+#             second = num
+#     return second
+# print(sec_lrg_num([7,2,8,9,2,3]))
+
+
+# Number breakdown
+# def num_breakdown(num):
+#     place = 1
+#     nums = []
+#     while num > 0:
+#         digit = num % 10
+#         if digit != 0:
+#             nums.append(str(digit*place))
+#         num //= 10
+#         place *= 10
+#     print("+".join(nums[::-1]))
+# num_breakdown(43018)
+
+
+# Variation of fizz buzz
+# def fizz_buzz(num):
+#     total = 0
+#     for i in range(num):
+#         if i % 3 == 0 or i % 5 == 0:
+#             total += i
+#     print(f"sum all numbers of fizz buzz : {total}")
+# num = int(input("enter the number : "))
+# fizz_buzz(num)
+
+# Variation of leap year find next n leap years after a given year
+
+# def is_leap(year):
+#     return (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0)
+# def leap_years(year,n):
+#     result = []
+#     year += 1
+#     while year % 4 != 0:
+#         year += 1
+#     while len(result) < n:
+#         if is_leap(year):
+#             result.append(year)
+#         year += 4
+#     print(",".join(map(str,result)))
+# leap_years(999,4)
+
+# Non Repeat charcter in given string
+# def non_rep_char(word):
+#     freq = {}
+#     for char in word:
+#         freq[char] = freq.get(char,0)+1
+#     for char in word:
+#         if freq[char] == 1:
+#             print(char)
+#             return
+
+# non_rep_char("amazom")
+
+# Bubble sort :
+
+# def bubble_sort(arr):
+#     n = len(arr)
+#     for i in range(n-1):
+#         swapped = False
+#         for j in range(n-i-1):
+#             if arr[j] > arr[j+1]:
+#                 arr[j],arr[j+1] = arr[j+1],arr[j]
+#                 swapped = True
+#         if not swapped:
+#             break
+#     print(arr)
+# arr = [5,3,6,8,2,9]
+# bubble_sort(arr)
+
+
+
+
+
+
+
+
+
+
+
+
+

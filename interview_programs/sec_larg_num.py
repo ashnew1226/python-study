@@ -18,3 +18,4 @@ def sec_lrg_num(arr):
 
          
 print(sec_lrg_num([3, 5, 7, 1, 6, 14, 10]))   # 10
+
