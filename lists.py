@@ -1,4 +1,4 @@
-fruits = ["banana","guava","kiwi","apple","grapes"]
+# fruits = ["banana","guava","kiwi","apple","grapes"]
 # new_list = []
 # for i in fruits:
 #     if "a" in i:
@@ -8,5 +8,9 @@ fruits = ["banana","guava","kiwi","apple","grapes"]
 # print(new_list)
 # new_list = [x for x in fruits if "a" in fruits]
 # print(fruits)
-new_list = [x  if x != "banana" else "orange" for x in fruits]
-print(fruits)
+# new_list = [x  if x != "banana" else "orange" for x in fruits]
+# print(fruits)
+
+
+even = [x for x in range(10) if x % 2 == 0]
+print(even)
